@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000;
 
 // Middleware to parse JSON
 app.use(bodyParser.json());
-current_data = ''
+let current_data = ''
 // Route for GET request
 app.get('/', (req, res) => {
   res.send(JSON.stringify(current_data));
