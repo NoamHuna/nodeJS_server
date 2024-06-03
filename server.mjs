@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 
 // Route for POST request
 app.post('/data', (req, res) => {
-  const receivedData = req.body;
+  const receivedData = req.query; // Read data from query parameters
   console.log('Received JSON data:', receivedData);
 
   // Write received data to file
